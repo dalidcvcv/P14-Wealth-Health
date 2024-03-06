@@ -1,0 +1,48 @@
+.empty-datatable .rdt_TableBody .rdt_TableRow {
+    display: none;
+}
+
+.tableList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: auto;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);   */
+}
+
+.tableList h1 {
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+.sc-dmXWDj.fpBGKh {
+  margin: 40px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+  display: grid;
+  grid-auto-flow:column;
+  place-items: center;
+  gap: 10px; 
+ 
+}
+.filter input {
+  height: 40px;
+  border: 1px solid #5a976f;
+  border-radius: 10px;
+  width: 94%;
+  padding: 0 30px 0 10px;
+}
+
+.icondelete {
+  color: #5a976f;
+}
+
+.icondelete:hover {
+  color: #93ad18;
+}

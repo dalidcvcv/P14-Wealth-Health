@@ -1,0 +1,40 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.navBar img {
+    width: 6%;
+    margin-left: 3%;
+}
+
+a {
+    text-decoration: none;
+    color: black
+  }
+  
+  .navBar a:last-child {
+    margin-right: 3%; 
+}
+
+.navBar::after {
+    content: ''; 
+    position: absolute; 
+    left: 0;
+    right: 0; 
+    bottom: 0; 
+    height: 3px; 
+    box-shadow: 0 2px 4px rgba(53, 88, 53, 0.5); 
+}
+
+.iconHeader {
+    color: #5a976f;
+    margin-right: 8px;
+}
+
+.iconHeader:hover {
+    color: #93ad18;
+}
