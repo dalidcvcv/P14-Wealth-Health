@@ -23,6 +23,8 @@ function AddEmployees() {
 
   const dispatch = useDispatch();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [employeeName, setEmployeeName] = useState('');
+  const [employeeLastName, setEmployeeLastName] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -96,6 +98,8 @@ function AddEmployees() {
     });
   
     // Ouvrir la modale pour informer l'utilisateur de la réussite de la soumission
+    setEmployeeName(employee.firstName);
+    setEmployeeLastName(employee.lastName);
     setIsModalOpen(true);
   };
   
@@ -156,9 +160,11 @@ function AddEmployees() {
         </label>
         <button className='submit-btn' type='submit'>Save</button>
       </form>
-      <Modal
-        isOpen={isModalOpen}
+      <Modal 
+        isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)}
+        employeeName={employeeName}
+        employeeLastName={employeeLastName}
       />
     </div>
   );

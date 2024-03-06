@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, employeeName, employeeLastName }) => {
     <div className="modal-backdrop">
       <div className="modal">
         <h2>Success</h2>
-        <p>The employee {employeeName} {employeeLastName} has been successfully created!</p>
+        <p>The employee <strong>{employeeName} {employeeLastName}</strong> has been successfully created!</p>
         <button onClick={onClose}>Close</button>
       </div>
     </div>
