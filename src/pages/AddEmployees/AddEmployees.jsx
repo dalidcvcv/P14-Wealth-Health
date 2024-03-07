@@ -3,7 +3,7 @@ import EmployeeForm from '../../components/EmployeeForm/EmployeeForm'
 import { useDispatch } from 'react-redux'
 import { addEmployee } from '../../redux/employees'
 import 'react-datepicker/dist/react-datepicker.css'
-import Modal from '../../components/Modal/Modal'
+import Modal from '@dalidcvcv/oc-p14-modal';
 import './AddEmployees.css'
 
 function AddEmployees () {
@@ -119,8 +119,7 @@ function AddEmployees () {
       <Modal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)}
-        employeeName={employeeName}
-        employeeLastName={employeeLastName}
+        title={ `The employee ${employeeName} ${employeeLastName} has been successfully created!`} 
       />
     </div>
   );
